@@ -17,6 +17,8 @@
         <module>plutus-framework-starters/plutus-framework-starter-kafka</module>
         <module>plutus-framework-starters/plutus-framework-starter-rocketmq</module>
         <module>plutus-framework-starters/plutus-framework-starter-rabbitmq</module>
+        <module>plutus-framework-starters/plutus-framework-starter-excel</module>
+        <module>plutus-framework-starters/plutus-framework-starter-redis</module>
     </modules>
 
     <repositories>
