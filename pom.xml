@@ -16,6 +16,7 @@
         <module>plutus-framework-parent</module>
         <module>plutus-framework-starters/plutus-framework-starter-kafka</module>
         <module>plutus-framework-starters/plutus-framework-starter-rocketmq</module>
+        <module>plutus-framework-starters/plutus-framework-starter-rabbitmq</module>
     </modules>
 
     <repositories>
