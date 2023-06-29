@@ -14,13 +14,15 @@
 
     <modules>
         <module>plutus-framework-parent</module>
-        <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-kafka</module>
-        <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-rocketmq</module>
-        <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-rabbitmq</module>
-        <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-excel</module>
-        <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-redis</module>
-        <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-dubbo</module>
+        <module>plutus-framework-parent/plutus-framework-starters</module>
         <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-database</module>
+        <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-dubbo</module>
+        <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-excel</module>
+        <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-kafka</module>
+        <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-rabbitmq</module>
+        <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-redis</module>
+        <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-rocketmq</module>
+        <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-web</module>
     </modules>
 
     <repositories>

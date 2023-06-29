@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>com.plutus.framework</groupId>
-        <artifactId>plutus-framework-parent</artifactId>
+        <artifactId>plutus-framework-starters</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath/>
     </parent>

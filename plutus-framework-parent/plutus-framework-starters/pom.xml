@@ -6,18 +6,16 @@
 
     <parent>
         <groupId>com.plutus.framework</groupId>
-        <artifactId>plutus-framework-starters</artifactId>
+        <artifactId>plutus-framework-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath/>
     </parent>
 
-    <artifactId>plutus-framework-starter-rabbitmq</artifactId>
+    <artifactId>plutus-framework-starters</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-    <name>Plutus Framework RabbitMQ Starter</name>
-    <description>Plutus Framework RabbitMQ Starter</description>
-
-    <dependencies>
-
-    </dependencies>
+    <name>Plutus Framework Starters</name>
+    <description>Plutus Framework Starters</description>
 
 </project>
