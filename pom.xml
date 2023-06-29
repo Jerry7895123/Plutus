@@ -23,6 +23,7 @@
         <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-redis</module>
         <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-rocketmq</module>
         <module>plutus-framework-parent/plutus-framework-starters/plutus-framework-starter-web</module>
+        <module>plutus-framework-parent/plutus-framework-utils</module>
     </modules>
 
     <repositories>
