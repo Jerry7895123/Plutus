@@ -1,6 +1,6 @@
 package com.plutus.framework.kafka;
 
-import com.plutus.framework.kafka.dynamic.KafkaConfigurationRegistrar;
+import com.plutus.framework.kafka.registrar.KafkaConfigurationRegistrar;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;

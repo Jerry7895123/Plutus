@@ -1,4 +1,4 @@
-package com.plutus.framework.kafka.dynamic;
+package com.plutus.framework.kafka.registrar;
 
 import com.plutus.framework.kafka.properties.DynamicKafkaProperties;
 import org.springframework.beans.factory.annotation.Autowired;
