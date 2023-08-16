@@ -53,6 +53,8 @@
         <easyexcel.version>3.3.2</easyexcel.version>
         <zookeeper.version>3.8.1</zookeeper.version>
         <mybatis-plus.version>3.5.3</mybatis-plus.version>
+        <dynamic-datasource.version>3.5.2</dynamic-datasource.version>
+        <mybatis-plus-generator.version>3.5.2</mybatis-plus-generator.version>
         <mysql.version>8.0.31</mysql.version>
         <apollo.version>2.1.0</apollo.version>
 
@@ -243,6 +245,20 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <!-- dynamic-datasource -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+                <version>${dynamic-datasource.version}</version>
+            </dependency>
+
+            <!-- mybatis-plus-generator -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatis-plus-generator.version}</version>
             </dependency>
 
             <!-- mysql -->
