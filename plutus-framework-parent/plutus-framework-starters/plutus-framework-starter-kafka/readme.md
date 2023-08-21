@@ -11,21 +11,21 @@ spring:
       primary: cluster1
       kafka:
         cluster1:
-          bootstrapServers: localhost:9092
+          bootstrap-servers: localhost:9092
           producer:
-            keySerializer: org.apache.kafka.common.serialization.StringSerializer
-            valueSerializer: org.apache.kafka.common.serialization.StringSerializer
+            key-serializer: org.apache.kafka.common.serialization.StringSerializer
+            value-serializer: org.apache.kafka.common.serialization.StringSerializer
           consumer:
-            keyDeserializer: org.apache.kafka.common.serialization.StringDeserializer
-            valueDeserializer: org.apache.kafka.common.serialization.StringDeserializer
+            key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+            value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
         cluster2:
-          bootstrapServers: localhost:9092
+          bootstrap-servers: localhost:9092
           producer:
-            keySerializer: org.apache.kafka.common.serialization.StringSerializer
-            valueSerializer: org.apache.kafka.common.serialization.StringSerializer
+            key-serializer: org.apache.kafka.common.serialization.StringSerializer
+            value-serializer: org.apache.kafka.common.serialization.StringSerializer
           consumer:
-            keyDeserializer: org.apache.kafka.common.serialization.StringDeserializer
-            valueDeserializer: org.apache.kafka.common.serialization.StringDeserializer
+            key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+            value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 ```
 
 #### 2. 多集群使用示例：

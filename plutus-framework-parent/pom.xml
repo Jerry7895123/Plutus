@@ -30,6 +30,17 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
+        <plutus-framework-starters.version>1.0.0-SNAPSHOT</plutus-framework-starters.version>
+        <plutus-framework-starter-database.version>1.0.0-SNAPSHOT</plutus-framework-starter-database.version>
+        <plutus-framework-starter-dubbo.version>1.0.0-SNAPSHOT</plutus-framework-starter-dubbo.version>
+        <plutus-framework-starter-excel.version>1.0.0-SNAPSHOT</plutus-framework-starter-excel.version>
+        <plutus-framework-starter-kafka.version>1.0.0-SNAPSHOT</plutus-framework-starter-kafka.version>
+        <plutus-framework-starter-rabbitmq.version>1.0.0-SNAPSHOT</plutus-framework-starter-rabbitmq.version>
+        <plutus-framework-starter-redis.version>1.0.0-SNAPSHOT</plutus-framework-starter-redis.version>
+        <plutus-framework-starter-rocketmq.version>1.0.0-SNAPSHOT</plutus-framework-starter-rocketmq.version>
+        <plutus-framework-starter-web.version>1.0.0-SNAPSHOT</plutus-framework-starter-web.version>
+        <plutus-framework-utils.version>1.0.0-SNAPSHOT</plutus-framework-utils.version>
+
         <spring-boot.version>2.6.14</spring-boot.version>
         <spring-cloud.version>2021.0.7</spring-cloud.version>
 
@@ -77,6 +88,58 @@
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>com.plutus.framework</groupId>
+                <artifactId>plutus-framework-starters</artifactId>
+                <version>${plutus-framework-starters.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.plutus.framework</groupId>
+                <artifactId>plutus-framework-starter-database</artifactId>
+                <version>${plutus-framework-starter-database.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.plutus.framework</groupId>
+                <artifactId>plutus-framework-starter-dubbo</artifactId>
+                <version>${plutus-framework-starter-dubbo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.plutus.framework</groupId>
+                <artifactId>plutus-framework-starter-excel</artifactId>
+                <version>${plutus-framework-starter-excel.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.plutus.framework</groupId>
+                <artifactId>plutus-framework-starter-kafka</artifactId>
+                <version>${plutus-framework-starter-kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.plutus.framework</groupId>
+                <artifactId>plutus-framework-starter-rabbitmq</artifactId>
+                <version>${plutus-framework-starter-rabbitmq.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.plutus.framework</groupId>
+                <artifactId>plutus-framework-starter-redis</artifactId>
+                <version>${plutus-framework-starter-redis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.plutus.framework</groupId>
+                <artifactId>plutus-framework-starter-rocketmq</artifactId>
+                <version>${plutus-framework-starter-rocketmq.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.plutus.framework</groupId>
+                <artifactId>plutus-framework-starter-web</artifactId>
+                <version>${plutus-framework-starter-web.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.plutus.framework</groupId>
+                <artifactId>plutus-framework-utils</artifactId>
+                <version>${plutus-framework-utils.version}</version>
+            </dependency>
+
             <!-- spring-boot-dependencies -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
