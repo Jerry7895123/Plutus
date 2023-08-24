@@ -4,7 +4,12 @@ import com.plutus.framework.kafka.properties.DynamicKafkaProperties;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
+import org.springframework.boot.context.properties.bind.BindResult;
+import org.springframework.boot.context.properties.bind.Binder;
+import org.springframework.boot.context.properties.source.ConfigurationPropertySources;
+import org.springframework.context.EnvironmentAware;
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
+import org.springframework.core.env.Environment;
 import org.springframework.core.type.AnnotationMetadata;
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
 import org.springframework.kafka.core.ConsumerFactory;
@@ -19,12 +24,16 @@ import java.util.Map;
  * @Date: 2023/8/16 17:32
  * @Description: kafka配置注册
  */
-public class KafkaConfigurationRegistrar implements ImportBeanDefinitionRegistrar {
+public class DynamicKafkaConfigurationRegistrar implements ImportBeanDefinitionRegistrar, EnvironmentAware {
 
-    private final DynamicKafkaProperties dynamicKafkaProperties;
+    private DynamicKafkaProperties dynamicKafkaProperties;
 
-    public KafkaConfigurationRegistrar(DynamicKafkaProperties dynamicKafkaProperties) {
-        this.dynamicKafkaProperties = dynamicKafkaProperties;
+    @Override
+    public void setEnvironment(Environment environment) {
+        Iterable sources = ConfigurationPropertySources.get(environment);
+        Binder binder = new Binder(sources);
+        BindResult<DynamicKafkaProperties> bindResult = binder.bind(DynamicKafkaProperties.PREFIX, DynamicKafkaProperties.class);
+        this.dynamicKafkaProperties = bindResult.get();
     }
 
     /**
