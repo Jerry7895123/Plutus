@@ -1,7 +1,6 @@
 package com.plutus.framework.kafka.registrar;
 
 import com.plutus.framework.kafka.properties.DynamicKafkaProperties;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
@@ -22,8 +21,11 @@ import java.util.Map;
  */
 public class KafkaConfigurationRegistrar implements ImportBeanDefinitionRegistrar {
 
-    @Autowired
-    private DynamicKafkaProperties dynamicKafkaProperties;
+    private final DynamicKafkaProperties dynamicKafkaProperties;
+
+    public KafkaConfigurationRegistrar(DynamicKafkaProperties dynamicKafkaProperties) {
+        this.dynamicKafkaProperties = dynamicKafkaProperties;
+    }
 
     /**
      * 注册kafka配置和实例
